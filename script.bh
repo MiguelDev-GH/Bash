@@ -1,0 +1,5 @@
+echo "salve aaaa"
+
+read nome;
+
+echo "mano $nome"

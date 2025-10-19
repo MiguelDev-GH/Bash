@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# $# é a contagem de parâmetros (exemplo: 3)
+
+echo "Iterando sobre $# parâmetros:"
+
+# A expansão aritmética $(()) é usada aqui:
+for (( i=1; i<=$#; i++ )); do
+    # $i é o número da posição (1, 2, 3...)
+    # ${!i} acessa o parâmetro naquela posição
+    echo "Parâmetro $i: ${!i}"
+done

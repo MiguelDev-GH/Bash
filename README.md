@@ -20,10 +20,7 @@ Serve para somar uma quantidade de números;
 > Output: 7
 ```
 *(Quantidade ilimitada de parâmetros)*
-
-
-
-
+<br><br>
 - subtrair
 
 ```

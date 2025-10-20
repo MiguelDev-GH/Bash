@@ -27,8 +27,20 @@ multiplicar(){
 
     local num=$2;
 
-    for (( i=3; i<=#$; i++ )); do
-        num=$((num - ${!i}))
+    for (( i=3; i<=$#; i++ )); do
+        num=$((num * ${!i}))
+    done
+
+    echo $num
+
+}
+
+dividir(){
+
+    local num=$2;
+
+    for (( i=3; i<=$#; i++ )); do
+        num=$((num / ${!i} | bc))
     done
 
     echo $num
@@ -36,12 +48,14 @@ multiplicar(){
 }
 
 
-if [ $1 = "somar" ]; then
+if [ $1 = "som" ]; then
     echo "$(somar "$@")"
-elif [ $1 = "subtrair" ]; then
+elif [ $1 = "sub" ]; then
     echo "$(subtrair "$@")"
-elif [ $! == "multiplicar" ] then
+elif [ $1 = "mult" ]; then
     echo "$(multiplicar "$@")"
+elif [ $1 = "div" ]; then
+    echo "$(dividir "$@")"
 else
     echo "Comando inválido!"
 fi

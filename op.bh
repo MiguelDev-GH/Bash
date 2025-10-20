@@ -1,0 +1,33 @@
+#!/bin/bash
+
+somar(){
+
+    local num=0
+
+    for (( i=2; i<=$#; i++ )); do
+        num=$((num + ${!i}))
+    done
+
+    echo "$num"
+}
+
+subtrair(){
+    
+    local num=$2;
+
+    for (( i=3; i<=$#; i++ )); do
+        num=$((num - ${!i}))
+    done
+
+    echo $num
+
+}
+
+
+if [ $1 = "somar" ]; then
+    echo "$(somar "$@")"
+elif [ $1 = "subtrair" ]; then
+    echo "$(subtrair "$@")"
+else 
+    echo "Comando inválido!"
+fi

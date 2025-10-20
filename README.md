@@ -3,9 +3,9 @@
 Comando básico: **./op.bh**
 > Serve para executar o script
 
-### Parâmetros:
+# Parâmetros:
 
-- somar
+### Somar
 
 ```
 ./op.bh somar NUMEROS
@@ -21,10 +21,10 @@ Serve para somar uma quantidade de números;
 ```
 *(Quantidade ilimitada de parâmetros)*
 <br><br>
-- subtrair
+### Subtrair
 
 ```
-./op.bh subtrair NUMEROS
+./op.bh sub NUMEROS
 ```
 
 Serve para subtrair uma quantidade de números;
@@ -32,7 +32,38 @@ Serve para subtrair uma quantidade de números;
 
 **Exemplo**
 ```
-./op.bh subtrair 10 5
+./op.bh sub 10 5
 > Output: 5
+```
+*(Quantidade ilimitada de parâmetros)*
+<br><br>
+### Multiplicar
+
+```
+./op.bh mult NUMEROS
+```
+
+Serve para multiplicar uma quantidade de números;
+
+
+**Exemplo**
+```
+./op.bh mult 3 2
+> Output: 6
+```
+*(Quantidade ilimitada de parâmetros)*
+### Dividir
+
+```
+./op.bh div NUMEROS
+```
+
+Serve para dividir uma quantidade de números;
+
+
+**Exemplo**
+```
+./op.bh div 4 2
+> Output: 2
 ```
 *(Quantidade ilimitada de parâmetros)*

@@ -17,7 +17,7 @@ Serve para somar uma quantidade de números;
 **Exemplo**
 ```
 ./op.bh somar 5 2
-**> Output: 7**
+> Output: 7
 ```
 *(Quantidade ilimitada de parâmetros)*
 
@@ -33,6 +33,6 @@ Serve para subtrair uma quantidade de números;
 **Exemplo**
 ```
 ./op.bh subtrair 10 5
-**> Output: 5**
+> Output: 5
 ```
 *(Quantidade ilimitada de parâmetros)*

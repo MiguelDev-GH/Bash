@@ -21,6 +21,9 @@ Serve para somar uma quantidade de números;
 ```
 *(Quantidade ilimitada de parâmetros)*
 
+
+
+
 - subtrair
 
 ```
